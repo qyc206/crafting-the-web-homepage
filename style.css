@@ -81,6 +81,7 @@ div {
   text-align: center;
   position: static;
   width: 93%;
+  overflow: auto;
 }
 
 .link {
