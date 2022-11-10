@@ -1,0 +1,113 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+header {
+  padding: 25px 50px 25px 60px;
+  text-align: left;
+  font-family: "Papyrus", "Courier New", monospace;
+  font-size: 40px;
+  background-image: linear-gradient(
+    to bottom right,
+    #e4a7e7,
+    #95f0a0,
+    #d29880,
+    rgb(119, 176, 232)
+  );
+}
+
+div {
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+#spring {
+  background-image: url("images/spring.jpeg");
+  background-size: cover;
+  opacity: 0.5;
+}
+#spring:hover {
+  opacity: 1;
+}
+
+#summer {
+  background-image: url("images/summer.jpeg");
+  background-size: cover;
+  opacity: 0.5;
+}
+#summer:hover {
+  opacity: 1;
+}
+
+#fall {
+  background-image: url("images/fall.jpeg");
+  background-size: cover;
+  opacity: 0.5;
+}
+#fall:hover {
+  opacity: 1;
+}
+
+#winter {
+  background-image: url("images/winter.jpeg");
+  background-size: cover;
+  opacity: 0.5;
+}
+#winter:hover {
+  opacity: 1;
+}
+
+.section {
+  color: rgb(255, 255, 255);
+  background: #000000;
+  font-weight: normal;
+  font-family: "Verdana", "Courier New", monospace;
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 3em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  position: static;
+  width: 93%;
+}
+
+.content {
+  height: 60%;
+  padding-top: 10%;
+  background: #000000;
+  text-align: center;
+  position: static;
+  width: 93%;
+}
+
+.link {
+  color: rgb(255, 255, 255);
+  font-family: "Verdana", "Courier New", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  position: static;
+  text-decoration: none;
+}
+.link:hover {
+  color: rgb(245, 210, 103);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.text {
+  color: rgb(255, 255, 255);
+  font-family: "Verdana", "Courier New", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  position: static;
+  padding: 10%;
+}
