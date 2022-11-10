@@ -8,4 +8,4 @@ Crafting the Web is a studio course that introduces the basics of HTML, CSS, and
 
 # Link to homepage
 
-[QYC Crafting the Web](qyc-crafting-the-web.netlify.app)
+[QYC Crafting the Web](https://qyc-crafting-the-web.netlify.app/)
