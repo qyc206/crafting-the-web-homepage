@@ -75,13 +75,29 @@ div {
 }
 
 .content {
+  height: 25%;
+  padding-top: 5%;
+  background: #000000;
+  text-align: center;
+  position: static;
+  width: 8%;
+  transition: height 0.5s;
+  overflow: hidden;
+}
+.content:hover {
   height: 60%;
   padding-top: 10%;
   background: #000000;
   text-align: center;
   position: static;
   width: 93%;
-  overflow: auto;
+  overflow: hidden;
+}
+.content:hover .expand-label {
+  display: none;
+}
+.content:hover #expand-content {
+  visibility: visible;
 }
 
 .link {
@@ -94,6 +110,7 @@ div {
   text-align: center;
   position: static;
   text-decoration: none;
+  visibility: hidden;
 }
 .link:hover {
   color: rgb(245, 210, 103);
@@ -111,4 +128,15 @@ div {
   text-align: center;
   position: static;
   padding: 10%;
+  visibility: hidden;
+}
+
+.expand-label {
+  color: rgb(255, 255, 255);
+  font-family: "Verdana", "Courier New", monospace;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2em;
+  text-align: center;
+  position: relative;
 }
