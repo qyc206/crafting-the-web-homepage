@@ -24,6 +24,11 @@ div {
   float: left;
 }
 
+ul {
+  list-style-type: circle;
+  text-align: justify;
+}
+
 #spring {
   background-image: url("images/spring.jpeg");
   background-size: cover;
@@ -103,7 +108,7 @@ div {
 .link {
   color: rgb(255, 255, 255);
   font-family: "Verdana", "Courier New", monospace;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1em;
   letter-spacing: 0.1em;
@@ -111,10 +116,12 @@ div {
   position: static;
   text-decoration: none;
   visibility: hidden;
+
+  cursor: pointer;
 }
 .link:hover {
   color: rgb(245, 210, 103);
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -139,4 +146,86 @@ div {
   line-height: 1.2em;
   text-align: center;
   position: relative;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 80px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #f1d4b3;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 700px;
+
+  animation-name: zoom;
+  animation-duration: 0.6s;
+
+  padding-bottom: 5%;
+
+  overflow: auto;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.reading-response {
+  font-family: "Verdana", "Courier New", monospace;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.reading-link {
+  color: #000;
+  text-decoration: none;
+}
+.reading-link:hover {
+  color: rgb(150, 75, 0);
+  font-weight: 600;
+  font-size: larger;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
