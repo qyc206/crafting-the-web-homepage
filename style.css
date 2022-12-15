@@ -196,6 +196,10 @@ ul {
   }
 }
 
+.reading {
+  display: none;
+}
+
 .reading-response {
   font-family: "Verdana", "Courier New", monospace;
   text-align: justify;
